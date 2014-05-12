@@ -439,7 +439,12 @@
   ;; Notice this still doesn't work:
   (gen/sample tree3)
 
-  ;; Notice that we're getting lots of small or single element trees. You
+  ;; Instead just do this:
+  (def tree
+    (gen/sized tree3))
+  (gen/sample tree)
+
+  ;; We're getting lots of small or single element trees. You
   ;; can fix this by replacing gen/one-of with gen/frequency
 
   )
