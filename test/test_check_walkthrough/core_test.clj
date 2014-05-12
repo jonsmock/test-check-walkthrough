@@ -6,7 +6,7 @@
             [clojure.test.check.properties :as prop]
             [test-check-walkthrough.core :refer :all]))
 
-;; Consider a normal unit test:
+;; Consider some normal unit tests for clojure's reverse:
 
 (deftest a-sample-unit-test
     (testing "an edge case"
